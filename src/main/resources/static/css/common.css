@@ -1,0 +1,101 @@
+body,html{
+    height: 100%!important;
+    margin-right: 10px;
+}
+.layui-layout-admin{
+    position: relative;
+    height: 100%;
+}
+.layui-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+}
+iframe{ position:absolute; height:100%; width:100%; border:none;}
+#navBar{
+    position: fixed;
+    left: 0;
+    top: 60px;
+    bottom: 44px;
+    width: 220px;
+    overflow: auto;
+}
+.layui-nav-tree{
+    height: 100%!important;
+}
+#top_tabs_box {
+    position: fixed;
+    left: 200px!important;
+    top: 60px!important;
+    right: 0;
+    bottom: 44px;
+    margin: 0!important;
+}
+.clildFrame {
+    position: fixed;
+    top: 101px;
+    left: 200px;
+    right: 0;
+    bottom: 44px;
+}
+.clildFrame .layui-tab-item {
+    height: 100%;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.fl {
+    float: left;
+}
+.fr{
+    float: right;
+}
+ cite{
+    font-style: normal;
+}
+.btnSuccess{
+    background: linear-gradient(#5762fe,#3843db) !important;
+    border-color: #222fe6 !important;
+    margin: 5px;
+}
+.btnError{
+    background: linear-gradient(#f8f8f8,#dbdbdb) !important;
+    border-color: #b3b3b3 !important;
+    margin: 5px 0;
+    color: black;
+}
+.btnBlock{
+    display:block !important;
+    text-align: center;
+    width: 94.5% !important;
+}
+.btnEdit{
+    background: linear-gradient(#5762fe,#3843db) !important;
+    border-color: #222fe6 !important;
+}
+.btnAdd{
+    background: linear-gradient(#5762fe,#3843db) !important;
+    border-color: #222fe6 !important;
+    float: right;width: 80px;
+    margin: 5px;
+}
+.editpage{
+    margin-right:50px;
+    padding-top: 25px;
+}
+  .editpage .layui-form-item {
+    width: 99%;
+    display: inline-block;
+}
+
+.layui-form-label{
+    min-width: 80px!important;
+    width: auto!important;
+}

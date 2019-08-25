@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>layui</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../../layui/css/layui.css"  media="all">
+    <link rel="stylesheet" href="../../css/common.css">
+    <script src="../../js/jquery-1.9.1.min.js" charset="utf-8"></script>
+    <script src="../../layui/layui.js" charset="utf-8"></script>
+    <script src="../../js/its/index.js" charset="utf-8"></script>
+</head>
+<body >
+<form class="layui-form formContent" id="uploadForm">
+    <div class="layui-form-item">
+        <div class="layui-inline">
+            <label class="layui-form-label">原文件:</label>
+            <div class="layui-input-inline">
+                <input type="file" name="resuFile" id="resuFile">
+        </div>
+    </div>
+        <div class="layui-inline">
+            <label class="layui-form-label">对比文件:</label>
+            <div class="layui-input-inline">
+                <input type="file" name="compFile" id="compFile" >
+            </div>
+        </div>
+
+<div class="layui-inline">
+    <button  type="button" class="layui-btn btn-s" data-type="reload" onclick="doupload()">提交</button>
+</div>
+        <div class="layui-inline">
+            <button  type="button" class="layui-btn btn-l" data-type="reload" onclick="toSearch()">查看过滤后文本</button>
+        </div>
+</div>
+</form>
+<div class="layui-form-item">
+    <div class="layui-inline">
+        <label class="layui-form-label">笔记文件总字数:</label>
+        <div class="layui-input-inline">
+            <input class="layui-input" name="countWord" id="countWord">
+        </div>
+    </div>
+    <div class="layui-inline">
+        <label class="layui-form-label">重复字数:</label>
+        <div class="layui-input-inline">
+            <input class="layui-input" name="repeat" id="repeat" >
+        </div>
+    </div>
+    <div class="layui-inline">
+        <label class="layui-form-label">重复率（%）:</label>
+        <div class="layui-input-inline">
+            <input class="layui-input" name="ratio" id="ratio" >
+        </div>
+    </div>
+    <div class="layui-inline">
+        <label class="layui-form-label">是否通过最大限制字数验证:</label>
+        <div class="layui-input-inline">
+            <input class="layui-input" name="isPass" id="isPass" >
+        </div>
+    </div>
+</div>
+<div class="layui-form-item" style="height: 500px">
+    <textarea class="layui-textarea" id="resuTex" style="display: none"></textarea>
+</div>
+<div class="layui-form-item" style="height: 50px">
+</div>
+<div class="layui-form-item" style="height: 500px">
+    <textarea class="layui-textarea" id="compTex" style="display: none"></textarea>
+</div>
+
+<form class="layui-form" id="multiForm" style="display:none;padding-top: 10px;">
+    <div class="layui-form-item">
+        <div class="layui-inline">
+            <label class="layui-form-label"style="width: 100px">原文 </label>
+            <div class="layui-input-inline"style="width: 500px">
+                <div id="copOrig" ></div>
+
+            </div>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-inline">
+            <label class="layui-form-label" style="width: 100px">笔记 </label>
+            <div class="layui-input-inline"style="width: 500px">
+                <div id="copNote"></div>
+
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>
